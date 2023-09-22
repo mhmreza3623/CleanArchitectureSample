@@ -14,12 +14,12 @@ builder.Services.AddSwaggerGen(options =>
 
 builder.Services.AddHttpClient("product_service", httpclient =>
 {
-    httpclient.BaseAddress = new Uri("http://localhost:15887");
+    httpclient.BaseAddress = new Uri("http://host.docker.internal:15887");
 });
 
 builder.Services.AddHttpClient("order_service", httpclient =>
 {
-    httpclient.BaseAddress = new Uri("http://localhost:51898");
+    httpclient.BaseAddress = new Uri("http://host.docker.internal:51898");
 });
 
 

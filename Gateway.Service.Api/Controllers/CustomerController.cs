@@ -21,14 +21,24 @@ namespace Gateway.Service.Api.Controllers
         [HttpPost("product/createProduct")]
         public async Task<IActionResult> CreateNewProduct()
         {
-            using var response = await _httpClientFactory.CreateClient("product_service")
-                .PostAsync("/Product/createproduct", new StringContent(""));
-            var responseString = await response.Content.ReadAsStringAsync();
-
-            return Ok(JsonSerializer.Deserialize<List<Product>>(responseString, new JsonSerializerOptions
+            try
             {
-                PropertyNameCaseInsensitive = true
-            }));
+
+
+                using var response = await _httpClientFactory.CreateClient("product_service")
+                    .PostAsync("/Product/createproduct", new StringContent(""));
+                var responseString = await response.Content.ReadAsStringAsync();
+
+                return Ok(JsonSerializer.Deserialize<List<Product>>(responseString, new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                }));
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
         }
 
         [HttpPost("order/createOrder")]

@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Product.Service.Api", "Product.Service.Api\Product.Service.Api.csproj", "{E980F169-D156-4453-BE2E-33DF45642F58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Product.Service.Api", "Product.Service.Api\Product.Service.Api.csproj", "{E980F169-D156-4453-BE2E-33DF45642F58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordre.Service.Api", "Ordre.Service.Api\Ordre.Service.Api.csproj", "{D06EA7F4-03F6-4D02-B004-88F4CEA6339D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordre.Service.Api", "Ordre.Service.Api\Ordre.Service.Api.csproj", "{D06EA7F4-03F6-4D02-B004-88F4CEA6339D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gateway.Service.Api", "Gateway.Service.Api\Gateway.Service.Api.csproj", "{6E300ACD-B937-48F2-88DF-2DB746B96E2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gateway.Service.Api", "Gateway.Service.Api\Gateway.Service.Api.csproj", "{6E300ACD-B937-48F2-88DF-2DB746B96E2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Core", "Core\Sample.Core.csproj", "{537B4E0B-8056-4590-9A7E-934AD4C8889C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Core", "Core\Sample.Core.csproj", "{537B4E0B-8056-4590-9A7E-934AD4C8889C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Infrastracture", "Infrastracture\Sample.Infrastracture.csproj", "{7B609816-8322-4884-8D0A-C08B3D92BB8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Infrastracture", "Infrastracture\Sample.Infrastracture.csproj", "{7B609816-8322-4884-8D0A-C08B3D92BB8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Application", "Application\Sample.Application.csproj", "{951209E4-1C18-428A-A42E-6C08F6D043B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Application", "Application\Sample.Application.csproj", "{951209E4-1C18-428A-A42E-6C08F6D043B0}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{C692A3F5-4743-4569-AAF3-D39AFC45A71E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{951209E4-1C18-428A-A42E-6C08F6D043B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{951209E4-1C18-428A-A42E-6C08F6D043B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{951209E4-1C18-428A-A42E-6C08F6D043B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C692A3F5-4743-4569-AAF3-D39AFC45A71E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C692A3F5-4743-4569-AAF3-D39AFC45A71E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C692A3F5-4743-4569-AAF3-D39AFC45A71E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C692A3F5-4743-4569-AAF3-D39AFC45A71E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
